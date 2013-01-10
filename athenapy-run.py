@@ -4,6 +4,10 @@ import convert
 if __name__ == '__main__':
     if argv[1] == 'convertSalesforceToSFMR':
         sd = convert.SurveyData()
-        questions, headers = sd.convertSalesforceToSFMR(argv[3], argv[2])
-        sd.toCSV(questions, headers)
+        datadictCSV = argv[2]
+        surveyCSV = argv[3]
+        outputCSV = argv[4]
+        questions, headers = sd.convertSalesforceToSFMR(surveyCSV, datadictCSV)
+        sd.toCSV(outputCSV, questions, headers)
+
         
