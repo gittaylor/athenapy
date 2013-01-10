@@ -22,7 +22,7 @@ class SurveyData(object):
 
   def createDictFromSFMRcomparison(self, fileName, options=None):  
     datadict = {}
-    f = open(fileName)
+    f = open(fileName, 'rU')
     if options is not None:
       r = csv.DictReader(f, **options)
     else:
@@ -119,7 +119,7 @@ class SurveyData(object):
         mrns[q[mrn_index]] = None
     return finalqs, headers
 
-  def conversionToCSV(self, fileName, qs, headers):
+  def toCSV(self, fileName, qs, headers):
     f = open(fileName, 'w')
     w = csv.writer(f)
     w.writerow(headers)
@@ -155,82 +155,3 @@ class SurveyData(object):
     barh(pos,val, xerr=rand(5), ecolor='r', align='center')
     yticks(pos, ('Tom', 'Dick', 'Harry', 'Slim', 'Jim'))
     xlabel('Performance')
-
-#  Old code
-#   def createDictFromSFMRcomparison(self, fileName, outFile=None):
-#     def convertSFMRChoiceEntries(choices, coded_values, sfmr_choices_and_values):
-#       sfmr_choice_values = []
-#       for line in sfmr_choices_and_values.strip().split('\n'):
-#         try:
-#           choice, value = (line[:line.rindex('(')], line[(line.rindex('(') + 1) : ])
-#         except ValueError:
-#           print("Line unable to be parsed:\n%s\n from entry:\n%s" % (line, sfmr_choices_and_values))
-#           raise
-#         choice = choice.strip()
-#         value = value.split(')')[0]
-#         sfmr_choice_values.append((choice, value))
-#       return sfmr_choice_values
-
-#     if outFile is not None:
-#       f = open(outFile, 'w')
-#       w = csv.writer(f)
-
-#     try:
-#       data, headers = self.getData(fileName)
-#       adict = {}
-#       question = None
-#       coded_value = None
-#       # get the relevant variables (if blank don't overwrite the old ones
-#       for entry in data:
-#         if entry[9] is not '':
-#           question = entry[9]
-#         if entry[6] is not '':
-#           answers = entry[6].strip().split('\n')
-#         if entry[8] is not '':
-#           coded_values = entry[8].strip().split('\n')
-#         # if the entry doesn't have sfmr variables don't process it further
-#         if entry[8] == '' or entry[14] == '':
-#           if outFile is not None:
-#             w.writerow(entry)
-#           continue
-#         # if the question has a numeric answer enter it as a tuple into the dictionary instead of a dict
-#         if entry[5] == 'Numeric' and entry[14] is not None:
-#           adict[question] = ('', 'value', entry[15])
-#           if outFile is not None:
-#             w.writerow(entry + ['value', entry[15], sfmr_variable_name])
-#           continue
-#         if entry[14] is not '':
-#           sfmr_coded_values = convertSFMRChoiceEntries(answers, coded_values, entry[14])
-#           sfmr_variable_name = entry[15]
-#         else:
-#           continue
-#         anentry = {}
-#         if len(answers) == 1 and len(coded_values) == 1:
-#           anentry[answer] = list(sfmr_coded_values[0]) + [sfmr_variable_name]
-#           if outFile is not None:
-#             w.writerow(entry + [answers[0], coded_values[0]] + list(sfmr_coded_values[0]) + [sfmr_variable_name])
-#           continue
-#         hold_entry = entry
-#         for answer, coded_value in zip(answers, coded_values):
-#           sfmr_codes = [i[1] for i in sfmr_coded_values]
-#           entry = hold_entry + [answer, coded_value]
-#           if coded_value in sfmr_codes:
-#             anentry[answer] = list(sfmr_coded_values[sfmr_codes.index(coded_value)]) + [sfmr_variable_name]
-#             if outFile is not None:
-#               w.writerow(entry + list(sfmr_coded_values[sfmr_codes.index(coded_value)]) + [sfmr_variable_name])
-#           elif int(coded_value) > 0 and answer[:3].lower() == 'yes' and ('Yes', '1') in sfmr_coded_values:
-#             anentry[answer] = ('Yes', '1', sfmr_variable_name)
-#             if outFile is not None:
-#               w.writerow(entry + ['Yes', '1', sfmr_variable_name])
-#           else:
-#             if outFile is not None:
-#               w.writerow(entry + ['', '', sfmr_variable_name])
-            
-#         adict.setdefault(question, {}).update(anentry)
-#     except:
-#       raise
-#       import sys
-#       print sys.exc_info()[0]
-#       import pdb; pdb.set_trace()
-#     f.close()
-#     return adict
