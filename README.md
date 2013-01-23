@@ -4,6 +4,10 @@
 
 A toolkit for developing and deploying Python applications for the [UC Athena](http://athenacarenetwork.org/) project.
 
+## Requirements
+
+An environment which includes Python (2.6 recommended)
+
 ## Usage
 
 ```bash
@@ -16,17 +20,31 @@ example:
 athenapy-run.py convertSalesforceToSFMR MySalesforceSFMRDict.csv MySurveys.csv MySFMRSurveys.csv
 ```
 
+Depending on your environment, you may have to explicitly call the Python executable
+
+Windows
+
+```bash
+/c/Python26/python.exe athenapy-run.py convertSalesforceToSFMR MySalesforceSFMRDict.csv MySurveys.csv MySFMRSurveys.csv
+```
+
+Linux
+
+```bash
+python2.6  athenapy-run.py convertSalesforceToSFMR MySalesforceSFMRDict.csv MySurveys.csv MySFMRSurveys.csv
+```
+
 ## Testing
 
 ### Running Unit Tests
 
-From Windows
+Windows
 
 ```bash
 /c/Python26/python.exe tests.py
 ```
 
-From Linux
+Linux
 
 ```bash
 python2.6 tests.py
