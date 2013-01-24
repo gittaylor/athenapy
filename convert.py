@@ -31,7 +31,7 @@ class SurveyData(object):
     question = ''
     for entry in r:
       if not(entry['variable'] == ''):
-        # if no new question value has been assigned, keep the previous value
+        # if a new question value has been assigned, update the question, otherwise keep the previous value
         if not(entry['question'] == ''):
           question = entry['question']
         datadict.setdefault(question, {})[entry['choice']] = (entry['variable'], entry['coded value'])
