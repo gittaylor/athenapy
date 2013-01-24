@@ -20,7 +20,7 @@ class SurveyData(object):
     headers = data.pop(0)
     return data, headers
 
-  def createDictFromSFMRcomparison(self, fileName, options=None):  
+  def createConversionDict(self, fileName, options=None):  
     datadict = {}
     f = open(fileName, 'rU')
     if options is not None:
@@ -28,9 +28,13 @@ class SurveyData(object):
     else:
       r = csv.DictReader(f)
 
+    question = ''
     for entry in r:
-      if not(entry['SFMR variable'] == ''):
-        datadict.setdefault(entry['Variable'], {})[entry['Choice']] = (entry['SFMR variable'], entry['SFMR coded value'])
+      if not(entry['variable'] == ''):
+        # if no new question value has been assigned, keep the previous value
+        if not(entry['question'] == ''):
+          question = entry['question']
+        datadict.setdefault(question, {})[entry['choice']] = (entry['variable'], entry['coded value'])
     return datadict
 
   def convert(self, adict=None):
@@ -83,9 +87,16 @@ class SurveyData(object):
           else:
             errors.append((data, val, curkey))
       output.append(outputrow)
+    self.conversions.setdefault('convertSalesforceToSFMR', []).append({'questionnaires': output, 'headers': outputHeaders, 'errors': errors})
     return output, outputHeaders, errors
 
-  def convertSalesforceToSFMR(self, salesforceFilename, conversionSFMRFilename):
+  def loadFiles(self, salesforceFilename, conversionFilename):
+
+    self.data, self.headers = self.getData(salesforceFilename)
+    self.sampleKey = self.createConversionDict(conversionFilename)
+
+  def convertToSFMR(self, salesforceFilename, conversionFilename):
+
     def questionnaireKeyGenerator(mrn_index, cd_index, errors):
       def q_fxn(x):
         try:
@@ -97,11 +108,8 @@ class SurveyData(object):
         return (x[mrn_index], cd)
       return q_fxn
 
-    self.data, self.headers = self.getData(salesforceFilename)
-    self.sampleKey = self.createDictFromSFMRcomparison(conversionSFMRFilename)
+    self.loadFiles(salesforceFilename, conversionFilename)
     qs, headers, errors = self.convert()
-    self.conversions.setdefault('convertSalesforceToSFMR', []).append({'questionnaires': qs, 'headers': headers, 'errors': errors})
-
     # Now return format the data to only return to SFMR the questionnaires they want in the sort order they want
     # sort by medical record number, return only the first entry for each patient (determined by MRN and CompletedDate, respectively)
     mrns = {}

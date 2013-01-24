@@ -1,5 +1,5 @@
 "Question
-Identifier",Questionnaire,Parent Question,Parent Answer Triggering Question,Question text,Type,Choice identifier,Variable,Choice,SFMR coded value,SFMR Answer,SFMR Answer coded value,SFMR variable,SFMR SAS format,Comments,SFMR #,SFMR Question,Sub-question
+Identifier",Questionnaire,Parent Question,Parent Answer Triggering Question,Question text,Type,Choice identifier,question,choice,coded value,SFMR Answer,SFMR Answer coded value,variable,SFMR SAS format,Comments,SFMR #,SFMR Question,Sub-question
 ,,,,,,,LocalID,string,string,,,MRN,,,,,
 ,,,,,,,PatientLocalIdentifier,string,string,,,PatientLocalIdentifier,,,,,
 ,,,,,,,LastName,string,string,,,LastName,,,,,
@@ -12,9 +12,9 @@ Identifier",Questionnaire,Parent Question,Parent Answer Triggering Question,Ques
 ,,,,,,2,,Female,2,,,,,,,,
 1182,,,,Have you ever had a mammogram?,Radio,3,Ever had a mammogram,Yes,1,Yes,1,evermamm,$yesno.,,1,"Have you ever had a mammogram?
 ",
-1182,,,,Have you ever had a mammogram?,Radio,4,Ever had a mammogram,No,0,No,0,evermamm,$yesno.,,1,"Have you ever had a mammogram?
+1182,,,,,Radio,4,,No,0,No,0,evermamm,$yesno.,,1,"Have you ever had a mammogram?
 ",
-1182,,,,Have you ever had a mammogram?,Radio,5,Ever had a mammogram,Don't Know,9,,,evermamm,$yesno.,,1,"Have you ever had a mammogram?
+1182,,,,,Radio,5,,Don't Know,9,,,evermamm,$yesno.,,1,"Have you ever had a mammogram?
 ",
 1183,,1182,Yes,When was your last mammogram?,Radio,6,Date of last mammogram,Less than 1 year ago,0,Less than 1 year ago,0,datemamm,$datemam.,,,,When was your last mammogram?
 ,,,,,,7,,1 to 2 years ago,1,1 to 2 years ago,1,datemamm,$datemam.,,,,
@@ -22,11 +22,11 @@ Identifier",Questionnaire,Parent Question,Parent Answer Triggering Question,Ques
 ,,,,,,9,,4 or more years ago,3,4 or more years ago,3,datemamm,$datemam.,,,,
 1184,,1182,Yes,"Please list medical facility, city and state where your last mammogram was done:",String,,,,,,,,,,,,Where was it done?
 1185,,,,Have you had a clinical breast exam within the last 3 months (done by a clinician)?,Radio,10,Clinical breast exam in last 3 months,Yes,1,Yes,1,brexam,$yesno.,,2,Have you had a clinical breast exam in the last 3 months?,
-1185,,,,Have you had a clinical breast exam within the last 3 months (done by a clinician)?,Radio,11,Clinical breast exam in last 3 months,No,0,No,0,brexam,$yesno.,,2,Have you had a clinical breast exam in the last 3 months?,
-1185,,,,Have you had a clinical breast exam within the last 3 months (done by a clinician)?,Radio,12,Clinical breast exam in last 3 months,Don't Know,9,,,brexam,$yesno.,,2,Have you had a clinical breast exam in the last 3 months?,
+1185,,,,Have you had a clinical breast exam within the last 3 months (done by a clinician)?,Radio,11,,No,0,No,0,brexam,$yesno.,,2,Have you had a clinical breast exam in the last 3 months?,
+1185,,,,Have you had a clinical breast exam within the last 3 months (done by a clinician)?,Radio,12,,Don't Know,9,,,brexam,$yesno.,,2,Have you had a clinical breast exam in the last 3 months?,
 1186,,1185,Yes,Did your clinician discover a new or unusual lump?,Radio,13,Last breast exam - new or unusual lump,Yes,1,Yes,1,drfind,$yesno.,,,,Did your doctor discover a new or unusual lump?
-1186,,1185,Yes,Did your clinician discover a new or unusual lump?,Radio,14,Last breast exam - new or unusual lump,No,0,No,0,drfind,$yesno.,,,,Did your doctor discover a new or unusual lump?
-1186,,1185,Yes,Did your clinician discover a new or unusual lump?,Radio,15,Last breast exam - new or unusual lump,Don't Know,9,,,drfind,$yesno.,,,,Did your doctor discover a new or unusual lump?
+1186,,1185,Yes,Did your clinician discover a new or unusual lump?,Radio,14,,No,0,No,0,drfind,$yesno.,,,,Did your doctor discover a new or unusual lump?
+1186,,1185,Yes,Did your clinician discover a new or unusual lump?,Radio,15,,Don't Know,9,,,drfind,$yesno.,,,,Did your doctor discover a new or unusual lump?
 1187,,,,Have you noticed any of the following changes in your RIGHT breast that are PRESENT TODAY?,Multiselect,,Changes in right breast - Today,,,,,,,,3,"Have you noticed any of the following changes in your breast? RIGHT BREAST
 PRESENT TODAY?
 ",
