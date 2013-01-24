@@ -9,7 +9,7 @@ if __name__ == '__main__':
         datadictCSV = argv[2]
         surveyCSV = argv[3]
         outputCSV = argv[4]
-        questions, headers = sd.convertSalesforceToSFMR(surveyCSV, datadictCSV)
+        questions, headers = sd.convertToSFMR(surveyCSV, datadictCSV)
         sd.toCSV(outputCSV, questions, headers)
 
         
