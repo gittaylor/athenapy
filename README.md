@@ -78,11 +78,11 @@ Now try the following commands to convert the survey data
 To SFMR format:
 
 ```bash
-python athenapy-run.py convert testdata/conversionSFMR.csv AthenaDataExport.csv AthenaDataExportSFMR.csv 
+python athenapy-run.py convert conversionSFMR.csv AthenaDataExport.csv AthenaDataExportSFMR.csv 
 ```
 
 To CDCG format:
 
 ```bash
-python athenapy-run.py convert testdata/conversionCDCG.csv AthenaDataExport.csv AthenaDataExportCDCG.csv 
+python athenapy-run.py convert conversionCDCG.csv AthenaDataExport.csv AthenaDataExportCDCG.csv 
 ```
