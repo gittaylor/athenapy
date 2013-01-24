@@ -128,7 +128,7 @@ class SurveyData(object):
     return finalqs, headers
 
   def toCSV(self, fileName, qs, headers):
-    f = open(fileName, 'w')
+    f = open(fileName, 'wb')
     w = csv.writer(f)
     w.writerow(headers)
     for q in qs:
