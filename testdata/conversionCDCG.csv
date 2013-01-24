@@ -1,0 +1,12 @@
+question,choice,variable,coded value
+LocalID,string,MRN,string
+PatientLocalIdentifier,string,PatientLocalIdentifier,string
+LastName,string,LastName,string
+FirstName,string,FirstName,string
+AthenaID,string,AthenaID,string
+ApptDate,string,ApptDate,string
+ApptTime,string,ApptTime,string
+CompletedDate,string,CompletedDate,string
+Ever had a mammogram,Yes,evermamm,111
+,No,evermamm,222
+,Don't Know,evermamm,999
