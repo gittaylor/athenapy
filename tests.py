@@ -9,10 +9,10 @@ class TestSequenceFunctions(unittest.TestCase):
 
     def test_convertSalesforceToSFMR(self):
         sd = convert.SurveyData()
-        datadictCSV = 'testdata/Athena questionnaire data dictionary - Breast Health History Intake Form.csv'
-        surveyCSV = 'testdata/AthenaDataExport test.csv'
-        outputCSV = 'testdata/test_convertSalesforceToSFMR.csv'
-        questions, headers = sd.convertToSFMR(surveyCSV, datadictCSV)
+        datadictCSV = 'conversionSFMR.csv'
+        surveyCSV = 'testdata/AthenaDataExportTest.csv'
+        outputCSV = 'testdata/AthenaDataExportSFMR.csv'
+        questions, headers = sd.convertData(surveyCSV, datadictCSV)
         sd.toCSV(outputCSV, questions, headers)
         # now read from the file and verify
         del sd
