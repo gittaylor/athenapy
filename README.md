@@ -59,11 +59,26 @@ Linux
 python tests.py
 ```
 
+If this returns
+
+```bash
+$ python tests.py
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.0XXs
+
+OK
+```
+
+Then the unit test was successful.
+
 ### Convert Using Test Files
 
 ```bash
 python athenapy-run.py convert conversionSFMR.csv testdata/AthenaDataExportTest.csv testdata/AthenaDataExportSFMR.csv 
 ```
+
+If you end up with a file in testdata called ```AthenaDataExportSFMR.csv``` and it's in SFMR format, then this test was successful.
 
 ### Testing With A Salesforce Export
 
