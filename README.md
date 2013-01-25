@@ -59,6 +59,12 @@ Linux
 python tests.py
 ```
 
+### Convert Using Test Files
+
+```bash
+python athenapy-run.py convert conversionSFMR.csv testdata/AthenaDataExportTest.csv testdata/AthenaDataExportSFMR.csv 
+```
+
 ### Testing With A Salesforce Export
 
 Log into your Athena Salesforce instance, and go to the Questionnaire Data Export page.
