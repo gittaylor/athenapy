@@ -24,7 +24,7 @@ athenapy-run.py <function> <data dictionary file> <survey data file> <output fil
 example:
 
 ```bash
-athenapy-run.py convert conversionSFMR.csv AthenaDataExport.csv AthenaDataExportSFMR.csv
+athenapy-run.py convert conversion_HQS_SFMR.csv AthenaDataExport.csv AthenaDataExportSFMR.csv
 ```
 
 Depending on your environment, you may have to explicitly call the Python executable
@@ -32,19 +32,19 @@ Depending on your environment, you may have to explicitly call the Python execut
 Windows
 
 ```bash
-/c/Python26/python.exe athenapy-run.py convert conversionSFMR.csv AthenaDataExport.csv AthenaDataExportSFMR.csv
+/c/Python26/python.exe athenapy-run.py convert conversion_HQS_SFMR.csv AthenaDataExport.csv AthenaDataExportSFMR.csv
 ```
 
 Linux
 
 ```bash
-python2.6  athenapy-run.py convert conversionSFMR.csv AthenaDataExport.csv AthenaDataExportSFMR.csv
+python2.6  athenapy-run.py convert conversion_HQS_SFMR.csv AthenaDataExport.csv AthenaDataExportSFMR.csv
 ```
 
 or (if your Linux system only has Python 2.6 installed)
 
 ```bash
-python  athenapy-run.py convert conversionSFMR.csv AthenaDataExport.csv AthenaDataExportSFMR.csv
+python  athenapy-run.py convert conversion_HQS_SFMR.csv AthenaDataExport.csv AthenaDataExportSFMR.csv
 ```
 
 This call method will be used for the rest of the examples here.
@@ -75,7 +75,7 @@ Then the unit test was successful.
 ### Convert Using Test Files
 
 ```bash
-python athenapy-run.py convert conversionSFMR.csv testdata/AthenaDataExportTest.csv testdata/AthenaDataExportSFMR.csv 
+python athenapy-run.py convert conversion_HQS_SFMR.csv testdata/AthenaDataExportTest.csv testdata/AthenaDataExportSFMR.csv 
 ```
 
 If you end up with a file in testdata called ```AthenaDataExportSFMR.csv``` and it's in SFMR format, then this test was successful.
@@ -99,11 +99,11 @@ Now try the following commands to convert the survey data
 To SFMR format:
 
 ```bash
-python athenapy-run.py convert conversionSFMR.csv AthenaDataExport.csv AthenaDataExportSFMR.csv 
+python athenapy-run.py convert conversion_HQS_SFMR.csv AthenaDataExport.csv AthenaDataExportSFMR.csv 
 ```
 
 To CDCG format:
 
 ```bash
-python athenapy-run.py convert conversionCDCG.csv AthenaDataExport.csv AthenaDataExportCDCG.csv 
+python athenapy-run.py convert conversion_HQS_CDCG.csv AthenaDataExport.csv AthenaDataExportCDCG.csv 
 ```
