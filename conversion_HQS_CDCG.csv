@@ -1,0 +1,25 @@
+question,choice,variable,coded value
+LocalID,string,MRN,string
+PatientLocalIdentifier,string,PatientLocalIdentifier,string
+LastName,string,LastName,string
+FirstName,string,FirstName,string
+AthenaID,string,AthenaID,string
+ApptDate,string,ApptDate,string
+ApptTime,string,ApptTime,string
+CompletedDate,string,CompletedDate,string
+Gender,Male,gender,1
+Gender,Female,gender,2
+Ever had a mammogram,Yes,mamm_ever,1
+Ever had a mammogram,No,mamm_ever,0
+Ever had a mammogram,Don't know,mamm_ever,99
+Date of last mammogram,Less than 1 year ago,mamm_last,0
+Date of last mammogram,1 to 2 years ago,mamm_last,1
+Date of last mammogram,2 to 3 years ago,mamm_last,2
+Date of last mammogram,4 or more years ago,mamm_last,3
+Place of last mammogram,string,mammlocation_last,string
+Clinical breast exam in last 3 months,Yes,clinbrexam_3mo,1
+Clinical breast exam in last 3 months,No,clinbrexam_3mo,0
+Clinical breast exam in last 3 months,Don't know,clinbrexam_3mo,99
+Last breast exam - new or unusual lump,Yes,clinicianlump_3mo,1
+Last breast exam - new or unusual lump,No,clinicianlump_3mo,0
+Last breast exam - new or unusual lump,Don't know,clinicianlump_3mo,99
