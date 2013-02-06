@@ -1,0 +1,546 @@
+question,choice,variable,coded value
+LocalID,value,MRN,value
+PatientLocalIdentifier,value,PatientLocalIdentifier,value
+LastName,string,LastName,string
+FirstName,string,FirstName,string
+AthenaID,value,AthenaID,value
+ApptDate,string,ApptDate,string
+ApptTime,string,ApptTime,string
+CompletedDate,string,CompletedDate,string
+SubmittedBy,string,SubmittedBy,string
+Gender,Male,gender,1
+Gender,Female,gender,2
+Ever had a mammogram,Yes,mamm_ever,1
+Ever had a mammogram,No,mamm_ever,0
+Ever had a mammogram,Don't know,mamm_ever,99
+Date of last mammogram,Less than 1 year ago,mamm_last,0
+Date of last mammogram,1 to 2 years ago,mamm_last,1
+Date of last mammogram,2 to 3 years ago,mamm_last,2
+Date of last mammogram,4 or more years ago,mamm_last,3
+Place of last mammogram,string,mammlocation_last,string
+Clinical breast exam in last 3 months,Yes,clinbrexam_3mo,1
+Clinical breast exam in last 3 months,No,clinbrexam_3mo,0
+Clinical breast exam in last 3 months,Don't know,clinbrexam_3mo,99
+Last breast exam - new or unusual lump,Yes,clinicianlump_3mo,1
+Last breast exam - new or unusual lump,No,clinicianlump_3mo,0
+Last breast exam - new or unusual lump,Don't know,clinicianlump_3mo,99
+Changes in right breast - Today,Lump (new or unusual),lumpr_today,1
+Changes in right breast - Today,Nipple discharge,discharger_today,1
+Changes in right breast - Today,Pain,painr_today,1
+Changes in right breast - Today,Other,changeotherr_today,1
+Changes in right breast - Today,None of the above,changenone_today,1
+Changes in left breast - Today,Lump (new or unusual),lumpl_today,1
+Changes in left breast - Today,Nipple discharge,dischargel_today,1
+Changes in left breast - Today,Pain,painl_today,1
+Changes in left breast - Today,Other,changeotherl_today,1
+Changes in left breast - Today,None of the above,changenonel_today,1
+Changes in right breast - Last 3 months,Lump (new or unusual),lumpr_3mo,1
+Changes in right breast - Last 3 months,Nipple discharge,discharger_3mo,1
+Changes in right breast - Last 3 months,Pain,painr_3mo,1
+Changes in right breast - Last 3 months,Other,changeotherr_3mo,1
+Changes in right breast - Last 3 months,None of the above,changenoner_3mo,1
+Changes in left breast - Last 3 months,Lump (new or unusual),lumpl_3mo,1
+Changes in left breast - Last 3 months,Nipple discharge,dischargel_3mo,1
+Changes in left breast - Last 3 months,Pain,painl_3mo,1
+Changes in left breast - Last 3 months,Other,changeotherl_3mo,1
+Changes in left breast - Last 3 months,None of the above,changenonel_3mo,1
+Breast cancer diagnosis,Yes - invasive breast cancer,brcancer_ever,1
+Breast cancer diagnosis,Yes - ductal carcinoma in situ(DCIS),brcancer_ever,2
+Breast cancer diagnosis,Yes - but I don't know what kind of breast cancer,brcancer_ever,3
+Breast cancer diagnosis,No,brcancer_ever,0
+Breast cancer diagnosis,Don't know,brcancer_ever,99
+Which breast diagnosed with DCIS,Left,dcis_laterality,2
+Which breast diagnosed with DCIS,Right,dcis_laterality,1
+Which breast diagnosed with DCIS,Both,dcis_laterality,4
+Which breast diagnosed with DCIS,Don't know,dcis_laterality,99
+Age when diagnosed with DCIS,value,dcisdx_age,value
+Age when diagnosed with DCIS - other breast,value,dcisotherbreast_age,value
+Which breast diagnosed with cancer,Left,invasive_laterality,2
+Which breast diagnosed with cancer,Right,invasive_laterality,1
+Which breast diagnosed with cancer,Both,invasive_laterality,4
+Which breast diagnosed with cancer,Don't know,invasive_laterality,99
+Age when diagnosed with breast cancer,value,invasivedx_age,value
+Age when diagnosed with cancer in other breast,value,invotherbreast_age,value
+ER status - right breast,Positive,er_right,1
+ER status - right breast,Negative,er_right,0
+ER status - right breast,Not tested,er_right,98
+ER status - right breast,Don't know,er_right,99
+ER status - left breast,Positive,er_left,1
+ER status - left breast,Negative,er_left,0
+ER status - left breast,Not tested,er_left,98
+ER status - left breast,Don't know,er_left,99
+PR status - right breast,Positive,pr_right,1
+PR status - right breast,Negative,pr_right,0
+PR status - right breast,Not tested,pr_right,98
+PR status - right breast,Don't know,pr_right,99
+PR status - left breast,Positive,pr_left,1
+PR status - left breast,Negative,pr_left,0
+PR status - left breast,Not tested,pr_left,98
+PR status - left breast,Don't know,pr_left,99
+Diagnosed with other cancers,Brain Cancer,brain,1
+Diagnosed with other cancers,"Colon, Rectal, Large Intestine Cancer",lowergi,1
+Diagnosed with other cancers,Kidney or Renal Cancer,kidney,1
+Diagnosed with other cancers,Leukemia,leukemia,1
+Diagnosed with other cancers,Lung Cancer,lung,1
+Diagnosed with other cancers,"Ovarian, Peritoneal, Fallopian Tube Cancer",ovarian,1
+Diagnosed with other cancers,Pancreatic Cancer,pancreatic,1
+Diagnosed with other cancers,Sarcoma,sarcoma,1
+Diagnosed with other cancers,Skin - Melanoma Cancer,melanoma,1
+Diagnosed with other cancers,Skin - Basal / Squamous Cell Cancer,otherskin,1
+Diagnosed with other cancers,Gastric/Stomach Cancer,gastric,1
+Diagnosed with other cancers,Thyroid Cancer,thyroid,1
+Diagnosed with other cancers,Uterine (non-Cervical) / Endometrial Cancer,uterineendo,1
+Diagnosed with other cancers,Other Cancer not in this list,cancerother,1
+Diagnosed with other cancers,Unknown Type of Cancer,unkcancer,1
+Diagnosed with other cancers,Don't know,dkcancer,1
+Diagnosed with other cancers,Adrenal Cancer,adrenal,1
+Diagnosed with other cancers,Bladder Cancer,bladder,1
+Diagnosed with other cancers,Bone Cancer,bone,1
+Diagnosed with other cancers,Breast Cancer,breast,1
+Diagnosed with other cancers,Cervical Cancer,cervical,1
+Diagnosed with other cancers,Gall Bladder Cancer,gallblad,1
+Diagnosed with other cancers,Lymphoma - Hodgkins,hodgkins,1
+Diagnosed with other cancers,Lymphoma - non-Hodgkins,nonhodgkins,1
+Diagnosed with other cancers,Prostate Cancer,prostate,1
+Diagnosed with other cancers,Renal Pelvis / Ureter Cancer,renalureter,1
+Diagnosed with other cancers,Small Intestine Cancer,smintestine,1
+Diagnosed with other cancers,Testicular Cancer,testicular,1
+Diagnosed with other cancers,No History of Cancer,nohxcancer,1
+Date of diagnosis for ovarian cancer,string,ovariandx_date,string
+Adopted,Yes,adopted,1
+Adopted,No,adopted,0
+Adopted,Don't know,adopted,99
+Medical history of biological family known,Yes,familyhx,1
+Medical history of biological family known,No,familyhx,0
+Medical history of biological family known,Don't know,familyhx,99
+Number of sisters,value,sisters,value
+Number of daughters,value,daughters,value
+Number of maternal aunts,value,maunt,value
+Number of paternal aunts,value,pauntp,value
+Any family member diagnosed with breast cancer or DCIS,Yes,familybrhx,1
+Any family member diagnosed with breast cancer or DCIS,No,familybrhx,0
+Any family member diagnosed with breast cancer or DCIS,Don't know,familybrhx,99
+Mother diagnosed with breast cancer,Yes - invasive breast cancer,mombc,1
+Mother diagnosed with breast cancer,Yes - ductal carcinoma in situ (DCIS),mombc,2
+Mother diagnosed with breast cancer,Yes - but I don't know what kind of breast cancer,mombc,3
+Mother diagnosed with breast cancer,No,mombc,0
+Mother diagnosed with breast cancer,Don't know,mombc,99
+Mother's age when diagnosed with breast cancer,Under age 50,mombc_age,1
+Mother's age when diagnosed with breast cancer,50 - 60,mombc_age,2
+Mother's age when diagnosed with breast cancer,Older than 60,mombc_age,3
+Mother's age when diagnosed with breast cancer,Don't know,mombc_age,99
+Age of mother when she had DCIS,Under age 50,momdcis_age,1
+Age of mother when she had DCIS,50 - 60,momdcis_age,2
+Age of mother when she had DCIS,Older than 60,momdcis_age,3
+Age of mother when she had DCIS,Don't know,momdcis_age,99
+Sisters ever been diagnosed with breast cancer,Yes - invasive breast cancer,sisterbc,1
+Sisters ever been diagnosed with breast cancer,Yes - ductal carcinoma in situ (DCIS),sisterbc,2
+Sisters ever been diagnosed with breast cancer,Yes - but I don't know what kind of breast cancer,sisterbc,3
+Sisters ever been diagnosed with breast cancer,No,sisterbc,0
+Sisters ever been diagnosed with breast cancer,Don't know,sisterbc,99
+Number of sisters diagnosed with breast cancer,1,sisterbc_quant,1
+Number of sisters diagnosed with breast cancer,2,sisterbc_quant,2
+Number of sisters diagnosed with breast cancer,3 or more,sisterbc_quant,3
+Number of sisters diagnosed with breast cancer,Don't know,sisterbc_quant,99
+Sister(s) age when diagnosed with breast cancer,Under age 50,sisterbc_age,1
+Sister(s) age when diagnosed with breast cancer,50 - 60,sisterbc_age,2
+Sister(s) age when diagnosed with breast cancer,Older than 60,sisterbc_age,3
+Sister(s) age when diagnosed with breast cancer,Don't know,sisterbc_age,99
+Number of sisters ever been diagnosed with DCIS,1,sisterdcis,1
+Number of sisters ever been diagnosed with DCIS,2,sisterdcis,2
+Number of sisters ever been diagnosed with DCIS,3,sisterdcis,3
+Number of sisters ever been diagnosed with DCIS,Don't know,sisterdcis,99
+Sister's age when she was diagnosed with DCIS,Under age 50,sisterdcis_age,1
+Sister's age when she was diagnosed with DCIS,50 - 60,sisterdcis_age,2
+Sister's age when she was diagnosed with DCIS,Older than 60,sisterdcis_age,3
+Sister's age when she was diagnosed with DCIS,Don't know,sisterdcis_age,99
+Daughters ever been diagnosed with breast cancer,Yes - invasive breast cancer,daughtbc,1
+Daughters ever been diagnosed with breast cancer,Yes - ductal carcinoma in situ (DCIS) ,daughtbc,2
+Daughters ever been diagnosed with breast cancer,Yes - but I don't know what kind of breast cancer,daughtbc,3
+Daughters ever been diagnosed with breast cancer,No,daughtbc,0
+Daughters ever been diagnosed with breast cancer,Don't know,daughtbc,99
+Number of daughters diagnosed with breast cancer,1,daughtbc_quant,1
+Number of daughters diagnosed with breast cancer,2,daughtbc_quant,2
+Number of daughters diagnosed with breast cancer,3 or more,daughtbc_quant,3
+Number of daughters diagnosed with breast cancer,Don't know,daughtbc_quant,99
+Age when daughters diagnosed with breast cancer,Under age 50,daughtbc_age,1
+Age when daughters diagnosed with breast cancer,50 - 60,daughtbc_age,2
+Age when daughters diagnosed with breast cancer,Older than 60,daughtbc_age,3
+Age when daughters diagnosed with breast cancer,Don't know,daughtbc_age,99
+Number of daughters diagnosed with DCIS,1,daughtdcis,1
+Number of daughters diagnosed with DCIS,2,daughtdcis,2
+Number of daughters diagnosed with DCIS,3 or more,daughtdcis,3
+Number of daughters diagnosed with DCIS,Don't know,daughtdcis,99
+Age of daughter(s) when diagnosed with DCIS, Under age 50,daughtdcis_age,1
+Age of daughter(s) when diagnosed with DCIS,50 - 60,daughtdcis_age,2
+Age of daughter(s) when diagnosed with DCIS,Older than 60,daughtdcis_age,3
+Age of daughter(s) when diagnosed with DCIS,Don't know,daughtdcis_age,99
+Maternal grandmother diagnosed with breast cancer,Yes - invasive breast cancer,mgrandma_bc,1
+Maternal grandmother diagnosed with breast cancer,Yes - ductal carcinoma in situ (DCIS),mgrandma_bc,2
+Maternal grandmother diagnosed with breast cancer,Yes - but I don't know what kind of breast cancer,mgrandma_bc,3
+Maternal grandmother diagnosed with breast cancer,No,mgrandma_bc,0
+Maternal grandmother diagnosed with breast cancer,Don't know,mgrandma_bc,99
+Age of maternal grandmother diagnosed with breast cancer,Older than 60,mgrandma_age,3
+Age of maternal grandmother diagnosed with breast cancer,Don't know,mgrandma_age,99
+Age of maternal grandmother diagnosed with breast cancer,Under age 50,mgrandma_age,1
+Age of maternal grandmother diagnosed with breast cancer,50 - 60,mgrandma_age,2
+Age of maternal grandmother when diagnosed with DCIS,Under age 50,mgrandma_dcis,1
+Age of maternal grandmother when diagnosed with DCIS,50 - 60,mgrandma_dcis,2
+Age of maternal grandmother when diagnosed with DCIS,Older than 60,mgrandma_dcis,3
+Age of maternal grandmother when diagnosed with DCIS,Don't know,mgrandma_dcis,99
+Paternal grandmother diagnosed with breast cancer,Yes - invasive breast cancer,pgrandma_bc,1
+Paternal grandmother diagnosed with breast cancer,Yes - ductal carcinoma in situ (DCIS),pgrandma_bc,2
+Paternal grandmother diagnosed with breast cancer,Yes - but I don't know what kind of breast cancer,pgrandma_bc,3
+Paternal grandmother diagnosed with breast cancer,No,pgrandma_bc,0
+Paternal grandmother diagnosed with breast cancer,Don't know,pgrandma_bc,99
+Age of paternal grandmother diagnosed with breast cancer,Older than 60,pgrandma_age,3
+Age of paternal grandmother diagnosed with breast cancer,Don't know,pgrandma_age,99
+Age of paternal grandmother diagnosed with breast cancer,50 - 60,pgrandma_age,1
+Age of paternal grandmother diagnosed with breast cancer,Under age 50,pgrandma_age,2
+Age of paternal grandmother when diagnosed with DCIS, Under age 50,pgrandma_dcis,1
+Age of paternal grandmother when diagnosed with DCIS,50 - 60,pgrandma_dcis,2
+Age of paternal grandmother when diagnosed with DCIS,Older than 60,pgrandma_dcis,3
+Age of paternal grandmother when diagnosed with DCIS,Don't know,pgrandma_dcis,99
+Maternal aunts diagnosed with breast cancer,Yes - invasive breast cancer,maunt_bc,1
+Maternal aunts diagnosed with breast cancer,Yes - ductal carcinoma in situ (DCIS),maunt_bc,2
+Maternal aunts diagnosed with breast cancer,Yes - but I don't know what kind of breast cancer,maunt_bc,3
+Maternal aunts diagnosed with breast cancer,No,maunt_bc,0
+Maternal aunts diagnosed with breast cancer,Don't know,maunt_bc,99
+Number of maternal aunts diagnosed with DCIS,1,mauntdcis_quant,1
+Number of maternal aunts diagnosed with DCIS,2,mauntdcis_quant,2
+Number of maternal aunts diagnosed with DCIS,3 or more,mauntdcis_quant,3
+Number of maternal aunts diagnosed with DCIS,Don't know,mauntdcis_quant,99
+Age at which maternal aunt(s) have breast cancer,Under age 50,maunt_agedcis,1
+Age at which maternal aunt(s) have breast cancer,50 - 60,maunt_agedcis,2
+Age at which maternal aunt(s) have breast cancer,Older than 60,maunt_agedcis,3
+Age at which maternal aunt(s) have breast cancer,Don't know,maunt_agedcis,99
+Number of maternal aunts diagnosed with breast cancer,1,mauntbc_quant,1
+Number of maternal aunts diagnosed with breast cancer,2,mauntbc_quant,2
+Number of maternal aunts diagnosed with breast cancer,3 or more,mauntbc_quant,3
+Number of maternal aunts diagnosed with breast cancer,Don't know,mauntbc_quant,99
+Age at which maternal aunt(s) have breast cancer,Under age 50,maunt_agebc,1
+Age at which maternal aunt(s) have breast cancer,50 - 60                             ,maunt_agebc,2
+Age at which maternal aunt(s) have breast cancer,Older than 60,maunt_agebc,3
+Age at which maternal aunt(s) have breast cancer,Don't know                                     ,maunt_agebc,99
+Paternal aunts diagnosed with breast cancer,Yes - invasive breast cancer,paunt_bc,1
+Paternal aunts diagnosed with breast cancer,Yes - ductal carcinoma in situ (DCIS) ,paunt_bc,2
+Paternal aunts diagnosed with breast cancer,Yes - but I don't know what kind of breast cancer ,paunt_bc,3
+Paternal aunts diagnosed with breast cancer,No,paunt_bc,0
+Paternal aunts diagnosed with breast cancer,Don't know ,paunt_bc,99
+Number of paternal aunts diagnosed with breast cancer,1,paunt_quant,1
+Number of paternal aunts diagnosed with breast cancer,2,paunt_quant,2
+Number of paternal aunts diagnosed with breast cancer,3 or more,paunt_quant,3
+Number of paternal aunts diagnosed with breast cancer,Don't know,paunt_quant,99
+Age at which paternal aunt diagnosed with breast cancer,Under age 50,paunt_agebc,1
+Age at which paternal aunt diagnosed with breast cancer,50 - 60                                             ,paunt_agebc,2
+Age at which paternal aunt diagnosed with breast cancer,Older than 60,paunt_agebc,3
+Age at which paternal aunt diagnosed with breast cancer,Don't know                                     ,paunt_agebc,99
+Number of paternal aunts diagnosed with DCIS,1,paunt_dcis,1
+Number of paternal aunts diagnosed with DCIS,2,paunt_dcis,2
+Number of paternal aunts diagnosed with DCIS,3 or more,paunt_dcis,3
+Number of paternal aunts diagnosed with DCIS,Don't know,paunt_dcis,99
+Age of paternal aunt when diagnosed with DCIS,Under age 50,paunt_agedcis,1
+Age of paternal aunt when diagnosed with DCIS,50 - 60,paunt_agedcis,2
+Age of paternal aunt when diagnosed with DCIS,Older than 60,paunt_agedcis,3
+Age of paternal aunt when diagnosed with DCIS,Don't know,paunt_agedcis,99
+Relatives diagnosed with bilateral breast cancer or DCIS,Yes,fambilat,1
+Relatives diagnosed with bilateral breast cancer or DCIS,No,fambilat,0
+Relatives diagnosed with bilateral breast cancer or DCIS,Don't know,fambilat,99
+Any male in family diagnosed with breast cancer,Yes,fammalebc,1
+Any male in family diagnosed with breast cancer,No,fammalebc,0
+Any male in family diagnosed with breast cancer,Don't know,fammalebc,99
+"Mother, sister, daughter, grandmother, or aunt diagnosed with ovarian cancer",Yes,ovarianfamhx,1
+"Mother, sister, daughter, grandmother, or aunt diagnosed with ovarian cancer",No,ovarianfamhx,0
+"Mother, sister, daughter, grandmother, or aunt diagnosed with ovarian cancer",Don't know,ovarianfamhx,99
+"Mother, sister, daughter, grandmother, or aunt diagnosed with both breast and ovarian cancer",Yes,ovarybreastfam,1
+"Mother, sister, daughter, grandmother, or aunt diagnosed with both breast and ovarian cancer",No,ovarybreastfam,0
+"Mother, sister, daughter, grandmother, or aunt diagnosed with both breast and ovarian cancer",Don't know,ovarybreastfam,99
+Any other women diagnosed with breast cancer or DCIS before the age of 55 years,Yes,otherfambc_age55,1
+Any other women diagnosed with breast cancer or DCIS before the age of 55 years,No,otherfambc_age55,0
+Any other women diagnosed with breast cancer or DCIS before the age of 55 years,Don't know,otherfambc_age55,99
+Two or more relatives on the same side of the family diagnosed with uterus and/or colon cancer diagnosed before age 55,Yes,fam2cancers_age55,1
+Two or more relatives on the same side of the family diagnosed with uterus and/or colon cancer diagnosed before age 56,No,fam2cancers_age55,0
+Two or more relatives on the same side of the family diagnosed with uterus and/or colon cancer diagnosed before age 57,Don't know,fam2cancers_age55,99
+Relatives diagnosed with any type of cancer before age 20,Yes,famanyca_age20,1
+Relatives diagnosed with any type of cancer before age 21,No,famanyca_age20,0
+Relatives diagnosed with any type of cancer before age 22,Don't know,famanyca_age20,99
+"Relatives diagnosed with leukemia, brain cancer, or a sarcoma before age 45",Yes,famleuk_age45,1
+"Relatives diagnosed with leukemia, brain cancer, or a sarcoma before age 46",No,famleuk_age45,0
+"Relatives diagnosed with leukemia, brain cancer, or a sarcoma before age 47",Don't know,famleuk_age45,99
+Ever had genetic testing for family cancer,Yes,genetictest,1
+Ever had genetic testing for family cancer,No,genetictest,0
+Ever had genetic testing for family cancer,Don't know,genetictest,99
+You positive for a gene mutation,Yes,genemutation,1
+You positive for a gene mutation,No,genemutation,0
+You positive for a gene mutation,Don't know,genemutation,99
+Gene mutation-Your's,BRCA1,brca1,1
+Gene mutation-Your's,BRCA2,brca2,1
+Gene mutation-Your's,P53 ,p53,1
+Gene mutation-Your's,PTEN,pten,1
+Gene mutation-Your's,CDH1 ,cdh1,1
+Gene mutation-Your's,SNPs,snps,1
+Gene mutation-Your's,CHEK2 ,chek2,1
+Gene mutation-Your's,Gene variant,genevar,1
+Gene mutation-Your's,Other,othergene,1
+Gene mutation-Your's,Don't know,geneunk,1
+Any relatives had genetic testing for family cancer,Yes,famgenetictest,1
+Any relatives had genetic testing for family cancer,No,famgenetictest,0
+Any relatives had genetic testing for family cancer,Don't know,famgenetictest,99
+Any relative positive for a gene mutation,Yes,famgenetic_pos,1
+Any relative positive for a gene mutation,No,famgenetic_pos,0
+Any relative positive for a gene mutation,Don't know,famgenetic_pos,99
+Gene mutation of relative(s),BRCA1,fambrca1,1
+Gene mutation of relative(s),BRCA2,fambrca2,1
+Gene mutation of relative(s),P53 ,famp53,1
+Gene mutation of relative(s),PTEN,fampten,1
+Gene mutation of relative(s),CDH1 ,famcdh1,1
+Gene mutation of relative(s),SNPs,famsnps,1
+Gene mutation of relative(s),CHEK2 ,famchek2,1
+Gene mutation of relative(s),Gene variant,famgenevariant,1
+Gene mutation of relative(s),Other,famgeneother,1
+Gene mutation of relative(s),Don't know,famgenedk,1
+Number of pregnancies,value,pregnant_quant,value
+Ever given birth,Yes,birth_ever,1
+Ever given birth,No,birth_ever,0
+Age when first child born,Under age 20,birth_age,1
+Age when first child born,20-24,birth_age,2
+Age when first child born,25-29,birth_age,3
+Age when first child born,30-39,birth_age,4
+Age when first child born,40 or older,birth_age,5
+Age at first menstrual period,Under age 10,menstrualfirst,0
+Age at first menstrual period,10,menstrualfirst,1
+Age at first menstrual period,11,menstrualfirst,2
+Age at first menstrual period,12,menstrualfirst,3
+Age at first menstrual period,13,menstrualfirst,4
+Age at first menstrual period,14,menstrualfirst,5
+Age at first menstrual period,15,menstrualfirst,6
+Age at first menstrual period,16,menstrualfirst,7
+Age at first menstrual period,Over 16,menstrualfirst,98
+Age at first menstrual period,Don't know,menstrualfirst,99
+Menstrual periods stopped permanently,Yes - Periods stopped naturally,menstrualend,2
+Menstrual periods stopped permanently,Yes - But now have periods induced by hormones,menstrualend,3
+Menstrual periods stopped permanently,Yes - Uterus removed by surgery,menstrualend,4
+Menstrual periods stopped permanently,Yes - Uterus AND both ovaries removed by surgery,menstrualend,5
+Menstrual periods stopped permanently,Yes - Due to chemotherapy or other medication,menstrualend,7
+Menstrual periods stopped permanently,Yes - Due to radiation,menstrualend,8
+Menstrual periods stopped permanently,Yes - Other reason,menstrualend,6
+Menstrual periods stopped permanently,No,menstrualend,0
+Menstrual periods stopped permanently,Not sure - periods less frequent,menstrualend,1
+Age when periods stopped,Under age 30,menstrualend_age,0
+Age when periods stopped,30-39,menstrualend_age,1
+Age when periods stopped,40-44,menstrualend_age,2
+Age when periods stopped,45-49,menstrualend_age,3
+Age when periods stopped,50-54,menstrualend_age,4
+Age when periods stopped,55 or older,menstrualend_age,5
+Ever had a hysterectomy,Yes,hysterec,1
+Ever had a hysterectomy,No,hysterec,0
+Ever had a hysterectomy,Don't know,hysterec,99
+Age at hysterectomy,Under age 25,hysterec_age,1
+Age at hysterectomy,25-34,hysterec_age,2
+Age at hysterectomy,35-44,hysterec_age,3
+Age at hysterectomy,45-49,hysterec_age,4
+Age at hysterectomy,50-54,hysterec_age,5
+Age at hysterectomy,55-59,hysterec_age,6
+Age at hysterectomy,60-64,hysterec_age,7
+Age at hysterectomy,65 or older,hysterec_age,8
+Ever had an oophorectomy,Yes - both ovaries were removed,ooph,1
+Ever had an oophorectomy,Yes - only one ovary was removed,ooph,2
+Ever had an oophorectomy,Yes - only part of one ovary was removed,ooph,3
+Ever had an oophorectomy,Yes - but I don't know whether one or both ovaries were removed,ooph,4
+Ever had an oophorectomy,No,ooph,0
+Ever had an oophorectomy,Don't know,ooph,99
+Age when ovary or part of ovary removed,Under age 25,ooph_age,1
+Age when ovary or part of ovary removed,25-34,ooph_age,2
+Age when ovary or part of ovary removed,35-44,ooph_age,3
+Age when ovary or part of ovary removed,45-49,ooph_age,4
+Age when ovary or part of ovary removed,50-54,ooph_age,5
+Age when ovary or part of ovary removed,55-59,ooph_age,6
+Age when ovary or part of ovary removed,60-64,ooph_age,7
+Age when ovary or part of ovary removed,65 or older,ooph_age,8
+Ovaries removed at the same time,Yes - same time,ovaryremoval,1
+Ovaries removed at the same time,No - different times,ovaryremoval,0
+Ovaries removed at the same time,Don't know,ovaryremoval,99
+Ever taken any Hormone Replacement,"Estrogen only (e.g., Premarin)",estrogen,1
+Ever taken any Hormone Replacement,"Progestin only (for example, Provera)",progestin,1
+Ever taken any Hormone Replacement,"Estrogen and progestin combination (for example, Prempro)",estroprogest,1
+Ever taken any Hormone Replacement,"Estrogen and testosterone combination (for example, Estratest)",estrotestost,1
+Ever taken any Hormone Replacement,Natural hormone therapy (Herbal supplements),naturalht,1
+Ever taken any Hormone Replacement,Topical vaginal estrogen cream,topicalecream,1
+Ever taken any Hormone Replacement,Estrogen patch,estrogenpatch,1
+Ever taken any Hormone Replacement,Other hormone therapy,htother,1
+Ever taken any Hormone Replacement,Yes - But not sure what kind of hormone replacement therapy,htunk,1
+Ever taken any Hormone Replacement,No - I have never been on any hormone therapy,ht,1
+Currently taking any hormone replacement,"Estrogen only (e.g., Premarin)",estrogen_curr,1
+Currently taking any hormone replacement,"Progestin only (for example, Provera)",progestin_curr,1
+Currently taking any hormone replacement,"Estrogen and progestin combination (for example, Prempro)",estroprogest_curr,1
+Currently taking any hormone replacement,"Estrogen and testosterone combination (for example, Estratest)",estrotestost_curr,1
+Currently taking any hormone replacement,Natural hormone therapy (Herbal supplements),naturalht_curr,1
+Currently taking any hormone replacement,Topical vaginal estrogen cream,topicalecream_curr,1
+Currently taking any hormone replacement,Estrogen patch,estrogenpatch_curr,1
+Currently taking any hormone replacement,Other hormone therapy,htother_curr,1
+Currently taking any hormone replacement,Yes - But not sure what kind of hormone replacement therapy,htunk_curr,1
+Currently taking any hormone replacement,No - I have never been on any hormone therapy,ht_never,1
+Total years on hormone replacement therapy,Less than five years,htpast_yrs,1
+Total years on hormone replacement therapy,For five years or more,htpast_yrs,2
+Total years on hormone replacement therapy,Don't know,htpast_yrs,99
+Total years on hormone replacement therapy,Don't know,htcurrent_yrs,99
+Total years on hormone replacement therapy,Less than five years,htcurrent_yrs,1
+Total years on hormone replacement therapy,For five years or more,htcurrent_yrs,2
+Currently taking medications,Tamoxifen (Nolvadex),tamox,1
+Currently taking medications,Raloxifene (Evista),ralox,1
+Currently taking medications,Anastrozole (Arimidex),anastro,1
+Currently taking medications,Letrozole (Femara),letroz,1
+Currently taking medications,Hormones for birth control,birthcontrol,1
+Currently taking medications,None,medsnone,1
+Breast procedures - right breast,Fine Needle Aspiration (FNA),fnar,1
+Breast procedures - right breast,Core biopsy,corebiopr,1
+Breast procedures - right breast,Surgical biopsy,surgbiopr,1
+Breast procedures - right breast,Lumpectomy for cancer,lumpectr,1
+Breast procedures - right breast,Mastectomy,mastectr,1
+Breast procedures - right breast,Radiation Therapy,radiationr,1
+Breast procedures - right breast,Breast reconstruction,reconstructr,1
+Breast procedures - right breast,Breast reduction,reductionr,1
+Breast procedures - right breast,Implants,implantsr,1
+Breast procedures - right breast,None of the above,brprocnoner,1
+Breast procedures - right breast,Don't know,brprocdkr,1
+Date of FIRST FNA - right breast,string,fnar_date,string
+Date of FIRST core biopsy - right breast,string,corebiopr_date,string
+Date of FIRST surgical biopsy - right breast,string,surgbiopr_date,string
+Date of lumpectomy - right breast,string,lumpectr_date,string
+Date of mastectomy - right breast,string,mastectr_date,string
+Date of completion of radiation therapy - right breast,string,radiationr_date,string
+Date of breast reconstruction - right breast,string,reconstructr_date,string
+Date of breast reduction - right breast,string,reductionr_date,string
+Date of breast implants - right breast,string,implantsr_date,string
+Breast procedures - left breast,Fine Needle Aspiration (FNA),fnal,1
+Breast procedures - left breast,Core biopsy,corebiopl,1
+Breast procedures - left breast,Surgical biopsy,surgbiopl,1
+Breast procedures - left breast,Lumpectomy for cancer,lumpectl,1
+Breast procedures - left breast,Mastectomy,mastectl,1
+Breast procedures - left breast,Radiation Therapy,radiationl,1
+Breast procedures - left breast,Breast reconstruction,reconstructl,1
+Breast procedures - left breast,Breast reduction,reductionl,1
+Breast procedures - left breast,Implants,implantsl,1
+Breast procedures - left breast,None of the above,brprocnonel,1
+Breast procedures - left breast,Don't know,brprocdkl,1
+Date of FIRST FNA - left breast,string,fnal_date,string
+Date of FIRST core biopsy - left breast,string,corebiopl_date,string
+Date of FIRST surgical biopsy - left breast,string,surgbiopl_date,string
+Date of lumpectomy for cancer - left breast,string,lumpectl_date,string
+Date of mastectomy - left breast,string,mastectl_date,string
+Date of completion of radiation therapy - left breast,string,radiationl_date,string
+Date of breast reconstruction - left breast,string,reconstructl_date,string
+Date of breast reduction - left breast,string,reductionl_date,string
+Date of breast implants - left breast,string,implantsl_date,string
+Number of biopsies in total,0,benignbx,0
+Number of biopsies in total,1,benignbx,1
+Number of biopsies in total,2,benignbx,2
+Number of biopsies in total,Over 2,benignbx,3
+Number of biopsies in total,Don't know,benignbx,99
+Any atypia biopsies,0,atypiabx,0
+Any atypia biopsies,1,atypiabx,1
+Any atypia biopsies,2,atypiabx,2
+Any atypia biopsies,over 2,atypiabx,3
+Any atypia biopsies,Don't know,atypiabx,99
+Height in feet,3 feet     ,height_feet,3
+Height in feet,4 feet ,height_feet,4
+Height in feet,5 feet,height_feet,5
+Height in feet,6 feet,height_feet,6
+Height in feet,7 feet,height_feet,7
+Height in feet,8 feet  ,height_feet,8
+Height in inches, 0 inch,height_feet,0
+Height in inches, 1 inch,height_feet,1
+Height in inches, 2 inches,height_feet,2
+Height in inches, 3 inches,height_feet,3
+Height in inches, 4 inches,height_feet,4
+Height in inches, 5 inches,height_feet,5
+Height in inches, 6 inches,height_feet,6
+Height in inches, 7 inches,height_feet,7
+Height in inches, 8 inches,height_feet,8
+Height in inches, 9 inches,height_feet,9
+Height in inches, 10 inches,height_feet,10
+Height in inches, 11 inches,height_feet,11
+Weight in pounds,value,weight_lbs,value
+Number of alcoholic drinks you have per day,None,alcohol_daily,0
+Number of alcoholic drinks you have per day,Less than one or one a day ,alcohol_daily,1
+Number of alcoholic drinks you have per day,About two a day,alcohol_daily,2
+Number of alcoholic drinks you have per day,Three or more a day,alcohol_daily,3
+Health over last month,Excellent,health_lastmo,1
+Health over last month,Very Good,health_lastmo,2
+Health over last month,Good,health_lastmo,3
+Health over last month,Fair,health_lastmo,4
+Health over last month,Poor,health_lastmo,5
+Any limitations on regular activities,None,activity_curr,1
+Any limitations on regular activities,A little bit,activity_curr,2
+Any limitations on regular activities,A lot,activity_curr,3
+Diagnosed or treated for other health issues,Heart Disease,heart,1
+Diagnosed or treated for other health issues,Diabetes (problem with your blood sugar levels),diabetes,1
+Diagnosed or treated for other health issues,High Blood Pressure,hibloodpress,1
+Diagnosed or treated for other health issues,Heart Attack,heartattack,1
+Diagnosed or treated for other health issues,Ulcer or Stomach Disease,ulcer,1
+Diagnosed or treated for other health issues,Lung Disease,lung,1
+Diagnosed or treated for other health issues,Congestive Heart Failure,chf,1
+Diagnosed or treated for other health issues,Kidney Disease,kidney,1
+Diagnosed or treated for other health issues,Depression,depression,1
+Diagnosed or treated for other health issues,"Osteoarthritis, degenerative arthritis Back pain",bone,1
+Diagnosed or treated for other health issues,Rheumatoid arthritis,rheumatoid,1
+Diagnosed or treated for other health issues,Liver Disease,liver,1
+Diagnosed or treated for other health issues,Anemia or other blood disease,anemia,1
+Diagnosed or treated for other health issues,Chronic Obstructive Pulmonary Disease,copd,1
+Diagnosed or treated for other health issues,"Alzheimer's disease, dementia",dementia,1
+Diagnosed or treated for other health issues,Stroke,stroke,1
+Diagnosed or treated for other health issues,Cancer (other than Breast Cancer or Skin Cancer),othercancer,1
+Diagnosed or treated for other health issues,Other conditions (not listed),otherhealth,1
+Diagnosed or treated for other health issues,No - I have never been diagnosed or treated for health issues,comorbidno,1
+Diagnosed or treated for other health issues,Don't know,comorbiddk,1
+Other health conditions limit regular activities,Not at all,comorbidlimits,1
+Other health conditions limit regular activities,Slightly,comorbidlimits,2
+Other health conditions limit regular activities,Moderately,comorbidlimits,3
+Other health conditions limit regular activities,Quite a bit,comorbidlimits,4
+Other health conditions limit regular activities,Extremely,comorbidlimits,5
+Jewish ancestry,Yes - only on my father's side,jewishfam,1
+Jewish ancestry,Yes - only on my mother's side,jewishfam,2
+Jewish ancestry,Yes - on both sides,jewishfam,3
+Jewish ancestry,Yes - not sure which side of my family,jewishfam,4
+Jewish ancestry,Don't know,jewishfam,99
+Jewish ancestry,No,jewishfam,0
+Racial background,Black or African American,black,1
+Racial background,White,white,1
+Racial background,Asian,asian,1
+Racial background,American Indian or Alaska Native,amindian,1
+Racial background,Native Hawaiian or Other Pacific Islander,hawaiipi,1
+Racial background,Some other race,raceother,1
+Racial background,Don't know,racedk,1
+Racial background,Refused,racerefused,1
+Asian background,Chinese,chinese,1
+Asian background,Filipino,filipino,1
+Asian background,Asian Indian,asianind,1
+Asian background,Japanese,japanese,1
+Asian background,Korean,korean,1
+Asian background,Vietnamese,vietnamese,1
+Asian background,Other Asian,asianother,1
+Pacific Islander background,Native Hawaiian,nativehawaii,1
+Pacific Islander background,Samoan,samoan,1
+Pacific Islander background,Guamanian or Chamorro,guamcham,1
+Pacific Islander background,Other Pacific Islander,pacificother,1
+"Hispanic, Latino or Spanish","No, not of Hispanic, Latino or Spanish origin",hispanic,0
+"Hispanic, Latino or Spanish","Yes - Mexican, Mexican American, or Chicano",hispanic,1
+"Hispanic, Latino or Spanish",Yes - Puerto Rican,hispanic,2
+"Hispanic, Latino or Spanish",Yes - Cuban,hispanic,3
+"Hispanic, Latino or Spanish","Yes - other Hispanic, Latino, or Spanish origin",hispanic,4
+Schooling,Some high school or less,education,0
+Schooling,High school graduate,education,1
+Schooling,Some college or technical school,education,2
+Schooling,College graduate or more,education,3
+Marital status,Married,maritalstatus,1
+Marital status,Widowed,maritalstatus,2
+Marital status,Living with a partner in a marriage-like relationship,maritalstatus,3
+Marital status,Never married,maritalstatus,4
+Marital status,Divorced,maritalstatus,5
+Marital status,Separated,maritalstatus,6
+Consent to use anonymized data,Yes,consentresearch,1
+Consent to use anonymized data,No,consentresearch,0
+Consent to be contacted in future,Yes,consentcontact,1
+Consent to be contacted in future,No,consentcontact,0
+Interested in giving blood/saliva sample,Yes,consentbio,1
+Interested in giving blood/saliva sample,No,consentbio,0
