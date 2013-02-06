@@ -1,5 +1,5 @@
 question,choice,variable,coded value
-LocalID,value,MRN,value
+LocalID,value,LocalID,value
 PatientLocalIdentifier,value,PatientLocalIdentifier,value
 LastName,string,LastName,string
 FirstName,string,FirstName,string

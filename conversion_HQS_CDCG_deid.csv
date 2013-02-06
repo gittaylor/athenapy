@@ -1,5 +1,5 @@
 question,choice,variable,coded value
-LocalId,string,MRN,string
+LocalID,string,LocalID,string
 ApptDate,string,ApptDate,string
 CompletedDate,string,CompletedDate,string
 Gender,Male,gender,1
