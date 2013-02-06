@@ -6,7 +6,7 @@ A toolkit for developing and deploying Python applications for the [UC Athena](h
 
 ## Requirements
 
-An environment which includes Python (2.6 recommended). Git is recommended for development.
+An environment which includes Python (version [2.6](http://www.python.org/download/releases/2.6.8/) recommended). Git is recommended for development.
 
 ## Installation
 
@@ -48,6 +48,20 @@ python  athenapy-run.py convert conversion_HQS_SFMR.csv AthenaDataExport.csv Ath
 ```
 
 This call method will be used for the rest of the examples here.
+
+## Example file formats
+
+# Conversion file
+
+![Conversion file](images/conversion.png)
+
+# Survey Data Input file
+
+![Survey Data Input file](images/surveydatainput.png)
+
+# Coded Data Output file
+
+![Coded Data Output file](images/codeddataoutput.png)
 
 ## Testing
 
