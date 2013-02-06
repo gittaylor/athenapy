@@ -51,15 +51,15 @@ This call method will be used for the rest of the examples here.
 
 ## Example file formats
 
-# Conversion file
+### Conversion file
 
 ![Conversion file](images/conversion.png)
 
-# Survey Data Input file
+### Survey Data Input file
 
 ![Survey Data Input file](images/surveydatainput.png)
 
-# Coded Data Output file
+### Coded Data Output file
 
 ![Coded Data Output file](images/codeddataoutput.png)
 

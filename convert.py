@@ -114,7 +114,7 @@ class SurveyData(object):
     # sort by medical record number, return only the first entry for each patient (determined by MRN and CompletedDate, respectively)
     mrns = {}
     # find the index of the position of the mrn and the CompletedDate
-    mrn_index = headers.index('MRN')
+    mrn_index = headers.index('LocalID')
     cd_index = headers.index('CompletedDate')
     apptdate_index = headers.index('ApptDate')
     finalqs = []
