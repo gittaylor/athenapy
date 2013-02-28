@@ -90,12 +90,12 @@ class SurveyData(object):
     self.conversions.setdefault('convertSalesforceToSFMR', []).append({'questionnaires': output, 'headers': outputHeaders, 'errors': errors})
     return output, outputHeaders, errors
 
-  def loadFiles(self, salesforceFilename, conversionFilename):
+  def loadFiles(self, dataFilename, conversionFilename):
 
-    self.data, self.headers = self.getData(salesforceFilename)
+    self.data, self.headers = self.getData(dataFilename)
     self.sampleKey = self.createConversionDict(conversionFilename)
 
-  def convertToSFMR(self, salesforceFilename, conversionFilename):
+  def convertData(self, dataFilename, conversionFilename):
 
     def questionnaireKeyGenerator(mrn_index, cd_index, errors):
       def q_fxn(x):
@@ -108,13 +108,13 @@ class SurveyData(object):
         return (x[mrn_index], cd)
       return q_fxn
 
-    self.loadFiles(salesforceFilename, conversionFilename)
+    self.loadFiles(dataFilename, conversionFilename)
     qs, headers, errors = self.convert()
     # Now return format the data to only return to SFMR the questionnaires they want in the sort order they want
     # sort by medical record number, return only the first entry for each patient (determined by MRN and CompletedDate, respectively)
     mrns = {}
     # find the index of the position of the mrn and the CompletedDate
-    mrn_index = headers.index('MRN')
+    mrn_index = headers.index('LocalID')
     cd_index = headers.index('CompletedDate')
     apptdate_index = headers.index('ApptDate')
     finalqs = []
